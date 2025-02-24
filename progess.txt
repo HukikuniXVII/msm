@@ -1,0 +1,1 @@
+ยังไม่ได้ต่อ Database , รับ Input จาก Field 

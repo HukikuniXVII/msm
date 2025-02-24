@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage & Spa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* header {
+      background: #2e2a28;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+    header h1{
+        width: 400px;
+        text-indent: 0;
+    } */
+    nav {
+      padding: 10px 0;
+      background: #2e2a28;
+    }
+    nav h1{
+        width: 300px;
+        color: white;
+        margin: 20px;
+    }
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        float: right;
+    }
+    nav a {
+      color: rgb(213, 156, 42);
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?spa,massage') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-top: 10px;
+    }
+    .btn {
+      background: #d1b28f;
+      color: black;
+      padding: 12px 24px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2e2a28;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .about-section {
+      background-color: #2e2a28;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .about-section p {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    footer {
+      background-color: #2c2926;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .footer-links div {
+      max-width: 200px;
+    }
+    .booking-section {
+      padding: 50px 20px;
+      background-color: #f3f3f3;
+    }
+    .booking-form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .booking-form h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2e2a28;
+    }
+    .booking-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .booking-form input, .booking-form select, .booking-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .booking-form button {
+      background: #d1b28f;
+      color: black;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .booking-form button:hover {
+      background: #c7a77a;
+    }
+  </style>
+</head>
+<body>
+    
+    <nav>
+        <h1>MASSAGE & SPA</h1>
+        <ul><li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#book">Book Now</a></li>
+        </ul>
+      </nav>
+  
+  
+
+  <div class="hero">
+    <h1>Relax & Rejuvenate</h1>
+    <p>Escape from the stress of daily life with our premium massage and spa treatments.</p>
+    <a href="#book" class="btn">Book Now</a>
+  </div>
+
+  <section id="services" class="section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="service-grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?massage" alt="Massage">
+        <h3>Full Body Massage</h3>
+        <p>Relax your muscles and relieve tension with our expert massage therapy.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?spa" alt="Spa">
+        <h3>Aromatherapy</h3>
+        <p>Indulge in soothing scents to uplift your mood and enhance relaxation.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?facial" alt="Facial">
+        <h3>Facial Treatment</h3>
+        <p>Rejuvenate your skin with our nourishing and cleansing facial treatments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>At Massage & Spa, we believe in providing a serene space where you can unwind and reconnect with yourself. Our skilled therapists are dedicated to delivering the best experience for your mind and body.</p>
+  </section>
+
+  <section id="book" class="booking-section">
+    <div class="booking-form">
+      <h2>Book Your Appointment</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Please Choose a Service --</option>
+          <option value="full-body-massage">Full Body Massage</option>
+          <option value="aromatherapy">Aromatherapy</option>
+          <option value="facial-treatment">Facial Treatment</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Notes:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <div>
+        <h4>Quick Links</h4>
+        <p>Home | Services | Contact</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: contact@massage-spa.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div>
+        <h4>Opening Hours</h4>
+        <p>Mon - Sun: 9:00 AM - 9:00 PM</p>
+      </div>
+    </div>
+    <p>&copy; 2025 Massage & Spa. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.btn').addEventListener('click', () => {
+      document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

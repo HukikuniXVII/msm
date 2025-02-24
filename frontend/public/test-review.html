@@ -1,0 +1,57 @@
+<!-- receipt.html -->
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใบเสร็จการจอง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .status {
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ใบเสร็จการจอง</h2>
+        <div class="details">
+            <p><strong>เลขที่การจอง:</strong> <span id="bookingId"></span></p>
+            <p><strong>ชื่อ:</strong> John Doe</p>
+            <p><strong>เบอร์โทร:</strong> 081-234-5678</p>
+            <p><strong>วันที่จอง:</strong> 2023-10-15</p>
+            <p><strong>เวลา:</strong> 14:00</p>
+            <p><strong>วิธีการชำระเงิน:</strong> <span id="paymentMethod"></span></p>
+        </div>
+        <div class="status">
+            <p><strong>สถานะ:</strong> รอการยืนยันจากร้าน</p>
+        </div>
+    </div>
+
+    <script>
+        // ดึงข้อมูลเลขที่การจองและวิธีการชำระเงินจาก URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookingId = urlParams.get('bookingId');
+        const paymentMethod = urlParams.get('paymentMethod');
+
+        document.getElementById('bookingId').textContent = bookingId;
+        document.getElementById('paymentMethod').textContent = paymentMethod;
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage & Spa Booking Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-purple-600 text-white p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">Relax Spa</a>
+      <ul class="flex space-x-4">
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#booking" class="hover:underline">Book Now</a></li>
+        <li><a href="#reviews" class="hover:underline">Reviews</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96 text-white flex items-center justify-center" style="background-image: url('https://source.unsplash.com/1600x900/?spa');">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold mb-4">Experience Ultimate Relaxation</h1>
+      <p class="text-lg mb-6">Book your perfect massage and spa session today.</p>
+      <a href="#booking" class="bg-white text-purple-600 px-4 py-2 rounded hover:bg-gray-200">Book Now</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">Traditional Thai Massage</h3>
+          <p class="text-gray-600">Relax your body with traditional Thai techniques.</p>
+          <p class="mt-4 text-purple-600 font-bold">Price: $50 / 60 mins</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">Aromatherapy Massage</h3>
+          <p class="text-gray-600">Calm your senses with aromatic essential oils.</p>
+          <p class="mt-4 text-purple-600 font-bold">Price: $70 / 60 mins</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-2">Foot Reflexology</h3>
+          <p class="text-gray-600">Rejuvenate your feet and improve overall wellness.</p>
+          <p class="mt-4 text-purple-600 font-bold">Price: $40 / 30 mins</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-12 bg-gray-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Book Your Session</h2>
+      <form class="bg-white p-8 rounded-lg shadow-md max-w-lg mx-auto">
+        <label class="block mb-4">
+          <span class="text-gray-700">Full Name</span>
+          <input type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-purple-500 focus:border-purple-500" placeholder="Enter your name">
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-700">Email</span>
+          <input type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-purple-500 focus:border-purple-500" placeholder="Enter your email">
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-700">Service</span>
+          <select class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-purple-500 focus:border-purple-500">
+            <option>Traditional Thai Massage</option>
+            <option>Aromatherapy Massage</option>
+            <option>Foot Reflexology</option>
+          </select>
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-700">Preferred Date & Time</span>
+          <input type="datetime-local" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-purple-500 focus:border-purple-500">
+        </label>
+        <button type="submit" class="w-full bg-purple-600 text-white py-2 rounded hover:bg-purple-700">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-gray-700">"Fantastic massage! I feel so refreshed and relaxed. Highly recommend!"</p>
+          <p class="mt-2 text-right text-purple-600">- Jane Doe</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <p class="text-gray-700">"The aromatherapy massage was absolutely amazing. Great service!"</p>
+          <p class="mt-2 text-right text-purple-600">- John Smith</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 bg-gray-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <p class="text-center text-gray-700">123 Relax St., Wellness City, SP 45678</p>
+      <p class="text-center text-gray-700">Phone: (123) 456-7890 | Email: info@relaxspa.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-600 text-white p-4 text-center">
+    <p>&copy; 2025 Relax Spa. All rights reserved.</p>
+  </footer>
+</body>
+</html>
